@@ -7,6 +7,7 @@
     margin-right: 10px;
 }
 
+
 /***********************
 MAIN STYLES
 ***********************/
@@ -16,7 +17,38 @@ body {
     font-family: Oxygen;
     margin: 0;
     color:  #99c2ff;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+p {
+    margin: 0 20px 40px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin-top: 4px;
+    border: solid 1px #000;
+    width: 300px;
+}
+
+/***********************
+HEADER STYLES
+***********************/
+
+.heading {
+    font-size: 18px;
+    padding-left: 0;
+    margin: 18px 0;
+    font-weight: bold;
 }
 
 header {
@@ -27,31 +59,14 @@ header {
     background: #3385ff;
 }
 
-h2 {
-    margin: 0;
-    font-size: 20px;
-}
-
 .banner {
     text-align: center;
     margin: auto;
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.heading {
-    font-size: 18px;
-    padding-left: 0;
-    margin: 18px 0;
-    font-weight: bold;
-}
-
-hr {
-    margin-top: 4px;
-}
+/***************************
+MAIN CONTENT
+***************************/
 
 .top-hr {
     border: solid 2px #000;
@@ -62,20 +77,99 @@ label {
     margin: 9px 0;
 }
 
-label, full-name {
+.full-name {
     margin-top: 0;
 }
 
+input {
+    margin: 0;
+}
+
 input, select {
-    height: 50px;
     background: #f2f2f2;
     border-radius: 4px;
     border: none;
     margin-bottom: 9px;
 }
 
+select,
+#name,
+#mail,
+#tel,
+#street,
+#city,
+#postcode {
+    height: 50px;
+}
+
 input::placeholder {
     color: #99c2ff;
-    padding-left: 5px;
+    text-align: right;
+    padding-right: 20px;
     font-style: italic;
 }
+
+#postcode {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.selector {
+    margin: 0 10px 0 0;
+
+}
+
+.tag {
+    margin: auto;
+}
+
+.subheader {
+    margin: 9px 0 20px;
+}
+
+#textarea {
+    height: 100px;
+}
+
+.submit {
+    margin-top: 20px;
+    height: 60px;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+
+footer {
+    text-align: center; 
+    font-style: italic;
+}
+
+footer p {
+    margin: 30px 0 180px;    
+}
+
+/***************************
+STYLES FOR LARGER SCREENS
+***************************/
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 768px;
+        margin: auto;
+} 
+    
+    hr {
+        width: 768px;
+    }
+
+}
+
