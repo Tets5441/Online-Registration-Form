@@ -32,12 +32,22 @@ h2 {
 .flex {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 hr {
     margin-top: 4px;
     border: solid 1px #000;
     width: 300px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0;
 }
 
 /***********************
@@ -81,9 +91,11 @@ label {
     margin-top: 0;
 }
 
-input {
+input, select {
     margin: 0;
+    width: 100%;
 }
+
 
 input, select {
     background: #f2f2f2;
@@ -100,6 +112,7 @@ select,
 #city,
 #postcode {
     height: 50px;
+    margin-top: 9px;
 }
 
 input::placeholder {
@@ -109,12 +122,15 @@ input::placeholder {
     font-style: italic;
 }
 
-#postcode {
-    max-width: 150px;
-    margin-bottom: 30px;
+.pctext {
+    margin-right: 200px;
 }
 
-.checkbox {
+#postcode {
+    max-width: 50%;
+}
+
+.block {
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -132,6 +148,10 @@ input::placeholder {
     margin: 9px 0 20px;
 }
 
+input.selector {
+    width: auto;
+}
+
 #textarea {
     height: 100px;
 }
@@ -144,6 +164,7 @@ input::placeholder {
     border-radius: 10px;
     color: whitesmoke;
     font-size: 18px;
+    width: 100%;
 }
 
 
@@ -153,7 +174,7 @@ footer {
 }
 
 footer p {
-    margin: 30px 0 180px;    
+    margin: 10px 0 180px;    
 }
 
 /***************************
@@ -163,12 +184,27 @@ STYLES FOR LARGER SCREENS
 @media screen and (min-width: 768px) {
     
     .container {
-        max-width: 768px;
+        max-width: 550px;
         margin: auto;
 } 
     
     hr {
-        width: 768px;
+        width: 550px;
+    }
+    
+    .block-2 {
+        display: inline-block;
+        justify-content: space-around;
+    }
+    
+    input {
+        width: 60%;
+        float: right;
+    }
+    
+    label {
+        width: 30%;
+        float: left;
     }
 
 }
