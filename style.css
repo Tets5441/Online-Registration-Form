@@ -6,6 +6,8 @@
     margin: auto;
     max-width: 300px;
     align-items: center;
+    background: #fff5e6;
+    border-radius: 0 0 10px 10px;
 }
 
 
@@ -19,6 +21,10 @@ body {
     margin: 0;
     color:  #99c2ff;
     font-size: 15px;
+}
+
+.block, .block-2 {
+    margin: auto 2px;
 }
 
 p {
@@ -37,9 +43,9 @@ h2 {
 }
 
 hr {
-    margin-top: 4px;
+    margin: 4px 2px 0;
     border: solid 1px #000;
-    width: 300px;
+    width: 296px;
 }
 
 fieldset {
@@ -57,7 +63,7 @@ HEADER STYLES
 
 .heading {
     font-size: 18px;
-    padding-left: 0;
+    padding-left: 2px;
     margin: 18px 0;
     font-weight: bold;
 }
@@ -72,7 +78,8 @@ header {
 
 .banner {
     text-align: center;
-    margin: auto;
+    margin: 0 auto auto;
+    padding-top: 18px;
 }
 
 /***************************
@@ -82,6 +89,7 @@ MAIN CONTENT
 .top-hr {
     border: solid 2px #000;
     margin-bottom: 0;
+    margin: 0 2px 0;
 }
 
 label {
@@ -96,10 +104,6 @@ label {
 input, select {
     margin: 0;
     width: 100%;
-}
-
-
-input, select {
     background: #f2f2f2;
     border-radius: 4px;
     border: none;
@@ -124,7 +128,7 @@ input {
     font-size: 20px;
 }
 
-.select {
+#select {
     padding-left: 10px;
     color: #178bff;
     font-style: oblique;
@@ -133,6 +137,24 @@ input {
 
 input:hover {
     background: #fdffb9;
+    transition-duration: 1s;
+}
+
+input:focus {
+    background: #fdffb9;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+#select:focus {
+    background: #fdffb9;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+#select:hover {
+    background: #fdffb9;
+    transition-duration: 1s;
 }
 
 input::placeholder {
@@ -171,7 +193,11 @@ input::placeholder {
 }
 
 .subheader {
-    margin: 9px 0 20px;
+    margin: 9px 0 20px 2px;
+}
+
+.newsletter {
+    height: auto;
 }
 
 input.selector {
@@ -180,21 +206,20 @@ input.selector {
 
 #textarea {
     height: 100px;
+    margin: 0 2px 9px;
+    padding-left: 0;
+    width: 296px;
 }
 
 .submit {
-    margin-top: 20px;
+    margin: 20px 2px 0;
     height: 60px;
     background: orange;
     border: none;
     border-radius: 10px;
     color: whitesmoke;
     font-size: 18px;
-    width: 100%;
-}
-
-optgroup {
-    color: aquamarine;
+    width: 296px;
 }
 
 footer {
@@ -226,11 +251,15 @@ STYLES FOR LARGER SCREENS
         margin-top: 55px;
     }
     
+    #textarea, .submit {
+        width: 546px;
+    }
+    
     /**************************
     FIELDSET 1
     **************************/
 
-    input, .select {
+    input, #select {
         width: 70%;
         margin: 0;
     }
@@ -275,11 +304,7 @@ STYLES FOR LARGER SCREENS
     .block {
        display: flex;
     }
-    
-    #textarea {
-        margin-right: 0;
-        width: 100%;
-    }
+
     
     
 }
