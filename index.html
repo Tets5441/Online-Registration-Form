@@ -13,155 +13,158 @@
     <header>
         <h2>THE CODE REVIEW</h2>
     </header>
-    <section class="banner">
+    <main class="container">
+        <section class="banner">
         <h3  class="heading">Signup for our newsletter</h3>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </section>
-    <main class="container">
         <hr class="top-hr">
         <hr>
         <form class="flex">
             <fieldset class="yourinfo">
                 <legend class="heading">Contact Information</legend>
+                
                 <div class="block-2">
                 <label for="name" class="full-name">Full Name</label>
                 <input type="text" id="name" name="user-name" placeholder="Required">
                 </div>
+                
                 <div class="block-2">
                 <label for="mail">Email Address</label>
                 <input type="email" id="mail" name="user-email" placeholder="Required">
                 </div>
+                
                 <div class="block-2">
                 <label for="tel">Phone Number</label>
                 <input type="tel" id="tel" name="user-phone-number">
                 </div>
+                
                 <div class="block-2">
                 <label for="street">Street Address</label>
                 <input type="tel" id="street" name="user-street">
                 </div>
+                
                 <div class="block-2">
                 <label for="city">City</label>
                 <input type="city" id="city" name="user-city">
                 </div>
+                
                 <div class="block-2">
                 <label for="county">County</label>
-                    <select name="county" placeholder="Choose-County" class="select">
-                        <optgroup label="England">
-                            <option></option>
+                    <select name="county" class="select"> 
+                        <optgroup label="Choose County">
+                            <option>Choose County</option>
+                            <option>Aberdeenshire</option>
+                            <option>Anglesey</option>
+                            <option>Angus</option>
+                            <option>Antrim</option>
+                            <option>Argyllshire</option>
+                            <option>Armagh</option>
+                            <option>Ayrshire</option>
+                            <option>Banffshire</option>
                             <option>Bedfordshire</option>
                             <option>Berkshire</option>
+                            <option>Berwickshire</option>
+                            <option>Brecknockshire</option>
                             <option>Bristol</option>
                             <option>Buckinghamshire</option>
+                            <option>Buteshire</option>
+                            <option>Caernarfonshire</option>
+                            <option>Caithness</option>
                             <option>Cambridgeshire</option>
+                            <option>Cardiganshire</option>
+                            <option>Carmarthenshire</option>
                             <option>Cheshire</option>
+                            <option>Choose County</option>
                             <option>City of London</option>
+                            <option>Clackmannanshire</option>
                             <option>Cornwall</option>
+                            <option>Cromartyshire</option>
                             <option>Cumbria</option>
+                            <option>Denbighshire</option>
                             <option>Derbyshire</option>
                             <option>Devon</option>
                             <option>Dorset</option>
+                            <option>Down</option>
+                            <option>Dumfriesshire</option>
+                            <option>Dunbartonshire</option>
                             <option>Durham</option>
+                            <option>East Lothian</option>
                             <option>East Riding of Yorkshire</option>
                             <option>East Sussex</option>
                             <option>Essex</option>
+                            <option>Fermanagh</option>
+                            <option>Fife</option>
+                            <option>Flintshire</option>
+                            <option>Glamorgan</option>
                             <option>Gloucestershire</option>
                             <option>Greater London</option>
                             <option>Greater Manchester</option>
                             <option>Hampshire</option>
                             <option>Herefordshire</option>
                             <option>Hertfordshire</option>
+                            <option>Inverness-shire</option>
                             <option>Isle of Wight</option>
                             <option>Kent</option>
+                            <option>Kincardineshire</option>
+                            <option>Kinross</option>
+                            <option>Kirkcudbrightshire</option>
+                            <option>Lanarkshire</option>
                             <option>Lancashire</option>
                             <option>Leicestershire</option>
                             <option>Lincolnshire</option>
+                            <option>Londonderry</option>
+                            <option>Merioneth</option>
                             <option>Merseyside</option>
+                            <option>Midlothian</option>
+                            <option>Monmouthshire</option>
+                            <option>Montgomeryshire</option>
+                            <option>Morayshire</option>
+                            <option>Nairnshire</option>
                             <option>Norfolk</option>
                             <option>North Yorkshire</option>
                             <option>Northamptonshire</option>
                             <option>Northumberland</option>
                             <option>Nottinghamshire</option>
+                            <option>Orkney</option>
                             <option>Oxfordshire</option>
+                            <option>Peeblesshire</option>
+                            <option>Pembrokeshire</option>
+                            <option>Perthshire</option>
+                            <option>Radnorshire</option>
+                            <option>Renfrewshire</option>
+                            <option>Ross-shire</option>
+                            <option>Roxburghshire</option>
                             <option>Rutland</option>
+                            <option>Selkirkshire</option>
+                            <option>Shetland</option>
                             <option>Shropshire</option>
                             <option>Somerset</option>
                             <option>South Yorkshire</option>
                             <option>Staffordshire</option>
+                            <option>Stirlingshire</option>
                             <option>Suffolk</option>
                             <option>Surrey</option>
+                            <option>Sutherland</option>
                             <option>Tyne and Wear</option>
+                            <option>Tyrone</option>
                             <option>Warwickshire</option>
+                            <option>West Lothian</option>
                             <option>West Midlands</option>
                             <option>West Sussex</option>
                             <option>West Yorkshire</option>
+                            <option>Wigtownshire</option>
                             <option>Wiltshire</option>
                             <option>Worcestershire</option>
                         </optgroup>
-                        <optgroup label="Wales">
-                            <option>Anglesey</option>
-                            <option>Brecknockshire</option>
-                            <option>Caernarfonshire</option>
-                            <option>Carmarthenshire</option>
-                            <option>Cardiganshire</option>
-                            <option>Denbighshire</option>
-                            <option>Flintshire</option>
-                            <option>Glamorgan</option>
-                            <option>Merioneth</option>
-                            <option>Monmouthshire</option>
-                            <option>Montgomeryshire</option>
-                            <option>Pembrokeshire</option>
-                            <option>Radnorshire</option>
-                        </optgroup>
-                        <optgroup label="Scotland">
-                            <option>Aberdeenshire</option>
-                            <option>Angus</option>
-                            <option>Argyllshire</option>
-                            <option>Ayrshire</option>
-                            <option>Banffshire</option>
-                            <option>Berwickshire</option>
-                            <option>Buteshire</option>
-                            <option>Cromartyshire</option>
-                            <option>Caithness</option>
-                            <option>Clackmannanshire</option>
-                            <option>Dumfriesshire</option>
-                            <option>Dunbartonshire</option>
-                            <option>East Lothian</option>
-                            <option>Fife</option>
-                            <option>Inverness-shire</option>
-                            <option>Kincardineshire</option>
-                            <option>Kinross</option>
-                            <option>Kirkcudbrightshire</option>
-                            <option>Lanarkshire</option>
-                            <option>Midlothian</option>
-                            <option>Morayshire</option>
-                            <option>Nairnshire</option>
-                            <option>Orkney</option>
-                            <option>Peeblesshire</option>
-                            <option>Perthshire</option>
-                            <option>Renfrewshire</option>
-                            <option>Ross-shire</option>
-                            <option>Roxburghshire</option>
-                            <option>Selkirkshire</option>
-                            <option>Shetland</option>
-                            <option>Stirlingshire</option>
-                            <option>Sutherland</option>
-                            <option>West Lothian</option>
-                            <option>Wigtownshire</option>
-                        </optgroup>
-                        <optgroup label="Northern Ireland">
-                            <option>Antrim</option>
-                            <option>Armagh</option>
-                            <option>Down</option>
-                            <option>Fermanagh</option>
-                            <option>Londonderry</option>
-                            <option>Tyrone</option>
-                        </optgroup>
                     </select>
                 </div>
+                
                 <div class="block-2">
                 <label for="postcode" class="pctext">Post Code</label>
                 <input type="postcode" id="postcode" name="user-postcode"> 
                 </div>
+                
             </fieldset>
             <hr>
             <fieldset class="selectors">

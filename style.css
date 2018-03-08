@@ -3,8 +3,9 @@
 }
 
 .container {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: auto;
+    max-width: 300px;
+    align-items: center;
 }
 
 
@@ -85,6 +86,7 @@ MAIN CONTENT
 
 label {
     margin: 9px 0;
+    height: 15px;
 }
 
 .full-name {
@@ -115,6 +117,24 @@ select,
     margin-top: 9px;
 }
 
+input {
+    padding-left: 10px;
+    color: #178bff;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.select {
+    padding-left: 10px;
+    color: #178bff;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+input:hover {
+    background: #fdffb9;
+}
+
 input::placeholder {
     color: #99c2ff;
     text-align: right;
@@ -127,17 +147,23 @@ input::placeholder {
 }
 
 #postcode {
-    max-width: 50%;
+    width: 150px;
 }
 
 .block {
-    display: inline-block;
     margin-bottom: 20px;
 }
 
-.selector {
-    margin: 0 10px 0 0;
 
+.selector {
+    margin: auto 10px 0 0;
+    width: auto;
+    vertical-align: middle;
+}
+
+.block label {
+    margin-bottom: px;
+    vertical-align: middle;
 }
 
 .tag {
@@ -167,6 +193,9 @@ input.selector {
     width: 100%;
 }
 
+optgroup {
+    color: aquamarine;
+}
 
 footer {
     text-align: center; 
@@ -192,20 +221,66 @@ STYLES FOR LARGER SCREENS
         width: 550px;
     }
     
-    .block-2 {
-        display: inline-block;
-        justify-content: space-around;
+    h3.heading {
+        font-size: 20px;
+        margin-top: 55px;
     }
     
-    input {
-        width: 60%;
-        float: right;
+    /**************************
+    FIELDSET 1
+    **************************/
+
+    input, .select {
+        width: 70%;
+        margin: 0;
+    }
+    
+    .pctext {
+        margin-right: 0;
     }
     
     label {
         width: 30%;
+        height: 15px;
         float: left;
+        margin: 0;
     }
+    
+    select,
+    #name,
+    #mail,
+    #tel,
+    #street,
+    #city,
+    #postcode {
+        margin-top: 0;
+    }
+    
+    .block-2 {
+        margin-top: 20px;
+    }
+    
+    .block-2 label {
+        padding-top: 17.5px;
+    }
+    
+    .subheader {
+        width: 100%;
+    }
+    
+    /**************************
+    FIELDSET 2
+    **************************/
 
+    .block {
+       display: flex;
+    }
+    
+    #textarea {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    
 }
 
