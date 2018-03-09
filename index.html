@@ -14,6 +14,7 @@
     <header>
         <h2>THE CODE REVIEW</h2>
     </header>
+    
     <main class="container">
         <section class="banner">
         <h3>Signup for our newsletter</h3>
@@ -23,7 +24,7 @@
         <hr>
         <form class="flex">
             <fieldset>
-                <legend class="heading">Contact Information</legend>
+                <legend class="heading heading-top">Contact Information</legend>
                 
                 <div class="block-2">
                 <label for="name" class="full-name">Full Name</label>
@@ -53,8 +54,8 @@
                 <div class="block-2">
                 <label for="county">County</label>
                     <select name="county" id="select"> 
-                        <optgroup label="Choose County">
-                            <option>Choose County</option>
+                        <optgroup>
+                            <option disabled selected>Choose County</option>
                             <option>Aberdeenshire</option>
                             <option>Anglesey</option>
                             <option>Angus</option>
@@ -168,7 +169,8 @@
                 
             </fieldset>
             <hr>
-            <fieldset class="selectors">
+            <div class="wrapper">
+            <fieldset class="fieldset-2">
                 <legend class="heading">Newsletter</legend>
                 <label class="subheader newsletter">Select the newsletters you would like to receive</label>
                 <div class="block">
@@ -196,6 +198,7 @@
                 <input type="textarea" id="textarea" name="textarea" placeholder="your views here!">
                 <button type="submit" class="submit">Sign Up</button> 
             </fieldset>
+            </div>
         </form>
     </main>   
 <footer>

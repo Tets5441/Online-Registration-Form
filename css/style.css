@@ -22,15 +22,14 @@ body {
     margin: 0;
     color:  #99c2ff;
     font-size: 15px;
+    padding: 0;
 }
 
 h2 {
     background: #3385ff;
 }
 
-.block, .block-2 {
-    margin: auto 2px;
-}
+
 
 p {
     margin: 0 20px 40px;
@@ -48,12 +47,13 @@ h2 {
 }
 
 hr {
-    margin: 4px 2px 0;
+    margin: 4px 0 4px .75em;
     border: solid 1px #000;
-    width: 296px;
+    width: 275.5px;
 }
 
 fieldset {
+    width: 300px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -62,13 +62,13 @@ fieldset {
     margin: 20px 0;
 }
 
+
 /***********************
 HEADER STYLES
 ***********************/
 
 .heading {
     font-size: 18px;
-    padding-left: 2px;
     margin: 18px 0;
     font-weight: bold;
 }
@@ -91,10 +91,13 @@ header {
 MAIN CONTENT
 ***************************/
 
+
+
 .top-hr {
     border: solid 2px #000;
-    margin-bottom: 0;
-    margin: 0 2px 0;
+    margin-left: .75em;
+    width: 273.5px;
+    
 }
 
 label {
@@ -115,7 +118,7 @@ input, select {
     margin-bottom: 9px;
 }
 
-select,
+#select,
 #name,
 #mail,
 #tel,
@@ -123,7 +126,7 @@ select,
 #city,
 #postcode {
     height: 50px;
-    margin-top: 9px;
+    margin: 10px 0 12px;
 }
 
 input {
@@ -177,11 +180,6 @@ input::placeholder {
     width: 150px;
 }
 
-.block {
-    margin-bottom: 20px;
-}
-
-
 .selector {
     margin: auto 10px 0 0;
     width: auto;
@@ -198,7 +196,7 @@ input::placeholder {
 }
 
 .subheader {
-    margin: 9px 0 20px 2px;
+    margin: 9px 0 20px;
 }
 
 .newsletter {
@@ -211,20 +209,20 @@ input.selector {
 
 #textarea {
     height: 100px;
-    margin: 0 2px 9px;
+    margin: 0 0 9px;
     padding-left: 0;
-    width: 296px;
+    width: 277.5px;
 }
 
 .submit {
-    margin: 20px 2px 0;
+    margin: 20px 0 0;
     height: 60px;
     background: orange;
     border: none;
     border-radius: 10px;
     color: whitesmoke;
     font-size: 18px;
-    width: 296px;
+    width: 277.5px;
 }
 
 footer {
@@ -237,6 +235,42 @@ footer p {
 }
 
 /***************************
+BACKGROUND STYLES
+***************************/
+
+
+.wrapper {
+    background: white;
+    border-radius: 5px;
+}
+
+.wrapper .heading {
+    background: white;
+}
+
+.subheader {
+    background: white;
+}
+
+.fieldset-2 {
+    background: white;
+}
+
+.fieldset-2 label {
+    background: white;
+}
+
+.block {
+    margin-bottom: 20px;
+    background: white;
+}
+
+.newsletter {
+    background: white;
+}
+
+
+/***************************
 STYLES FOR LARGER SCREENS
 ***************************/
 
@@ -246,11 +280,17 @@ STYLES FOR LARGER SCREENS
         max-width: 550px;
         margin: auto;
 } 
-    
-    hr, .top-hr {
-        width: 546px;
+    fieldset {
+        width: 550px;
     }
     
+    hr {
+        width: 525.5px;
+    }
+    
+    .top-hr {
+        width: 523.5px;
+    }
     
     
     h3.heading {
@@ -259,7 +299,7 @@ STYLES FOR LARGER SCREENS
     }
     
     #textarea, .submit {
-        width: 546px;
+        width: 527.5px;
     }
     
     /**************************
@@ -315,4 +355,3 @@ STYLES FOR LARGER SCREENS
     
     
 }
-
