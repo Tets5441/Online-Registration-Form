@@ -109,7 +109,7 @@ label {
     margin-top: 0;
 }
 
-input, select {
+input, select, #county, #textarea {
     margin: 0;
     width: 100%;
     background: #f2f2f2;
@@ -118,7 +118,11 @@ input, select {
     margin-bottom: 9px;
 }
 
-#select,
+textarea {
+    padding: 10px;
+}
+
+#county,
 #name,
 #mail,
 #tel,
@@ -129,48 +133,51 @@ input, select {
     margin: 10px 0 12px;
 }
 
-input {
+input, textarea {
     padding-left: 10px;
     color: #178bff;
     font-style: oblique;
     font-size: 20px;
 }
 
-#select {
+#county {
     padding-left: 10px;
     color: #178bff;
     font-style: oblique;
-    font-size: 20px;
 }
 
-input:hover {
-    background: #fdffb9;
-    transition-duration: 1s;
-}
+/***************************
+PSEUDO 
+***************************/
 
-input:focus {
+#textarea:focus, #county:focus, input:focus {
     background: #fdffb9;
     transition-timing-function: ease-out;
     transition-duration: 2s;
 }
 
-#select:focus {
-    background: #fdffb9;
-    transition-timing-function: ease-out;
-    transition-duration: 2s;
-}
-
-#select:hover {
+#textarea:hover, #county:hover, input:hover {
     background: #fdffb9;
     transition-duration: 1s;
 }
 
-input::placeholder {
+
+input::placeholder, textarea::placeholder {
     color: #99c2ff;
     text-align: right;
-    padding-right: 20px;
     font-style: italic;
 }
+
+
+select,
+    #name,
+    #mail,
+    #tel,
+    #street,
+    #city,
+    #postcode {
+        padding-right: 20px;
+    }
 
 .pctext {
     margin-right: 200px;
@@ -187,7 +194,6 @@ input::placeholder {
 }
 
 .block label {
-    margin-bottom: px;
     vertical-align: middle;
 }
 
@@ -210,7 +216,6 @@ input.selector {
 #textarea {
     height: 100px;
     margin: 0 0 9px;
-    padding-left: 0;
     width: 277.5px;
 }
 
@@ -238,13 +243,37 @@ footer p {
 BACKGROUND STYLES
 ***************************/
 
-
 .wrapper {
-    background: white;
+    background: #ffffe6;
     border-radius: 5px;
 }
 
 .wrapper .heading {
+    background: #ffffe6;
+}
+
+fieldset {
+    background: #ffffe6;
+}
+
+.block-2 {
+    background: #ffffe6;
+}
+
+.blocl-2, label {
+    background: #ffffe6;
+}
+
+.pctext {
+    background: #ffffe6;
+}
+
+.wrapper-2 {
+    background: white;
+    border-radius: 5px;
+}
+
+.wrapper-2 .heading {
     background: white;
 }
 
@@ -306,7 +335,7 @@ STYLES FOR LARGER SCREENS
     FIELDSET 1
     **************************/
 
-    input, #select {
+    input, #county {
         width: 70%;
         margin: 0;
     }

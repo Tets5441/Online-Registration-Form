@@ -23,6 +23,7 @@
         <hr class="top-hr">
         <hr>
         <form class="flex">
+            <div class="wrapper">
             <fieldset>
                 <legend class="heading heading-top">Contact Information</legend>
                 
@@ -43,18 +44,17 @@
                 
                 <div class="block-2">
                 <label for="street">Street Address</label>
-                <input required type="tel" id="street" name="user-street" placeholder="Required">
+                <input id="street" name="user-street" placeholder="e.g. 123 Any Street">
                 </div>
                 
                 <div class="block-2">
                 <label for="city">City</label>
-                <input required type="city" id="city" name="user-city" placeholder="Required">
+                <input id="city" name="user-city" placeholder="e.g. London">
                 </div>
                 
                 <div class="block-2">
                 <label for="county">County</label>
-                    <select name="county" id="select"> 
-                        <optgroup>
+                    <select name="county" id="county"> 
                             <option disabled selected>Choose County</option>
                             <option>Aberdeenshire</option>
                             <option>Anglesey</option>
@@ -158,44 +158,43 @@
                             <option>Wigtownshire</option>
                             <option>Wiltshire</option>
                             <option>Worcestershire</option>
-                        </optgroup>
                     </select>
                 </div>
                 
                 <div class="block-2">
                 <label for="postcode" class="pctext">Post Code</label>
-                <input required type="postcode" id="postcode" name="user-postcode" placeholder="Required"> 
-                </div>
-                
+                <input id="postcode" name="user-postcode" placeholder="e.g. SW1 ???"> 
+                </div>                
             </fieldset>
+            </div>
             <hr>
-            <div class="wrapper">
+            <div class="wrapper-2">
             <fieldset class="fieldset-2">
                 <legend class="heading">Newsletter</legend>
                 <label class="subheader newsletter">Select the newsletters you would like to receive</label>
                 <div class="block">
-                <input type="checkbox" value="html" name="news" class="selector">
-                <label>HTML News</label>
+                <input type="checkbox" value="html-newsletter" name="subscribe" class="selector" id="html-news">
+                <label for="html-news">HTML News</label>
                 </div>
                 <div class="block">
-                <input type="checkbox" value="css" name="news" class="selector">
-                <label>CSS News</label>
+                <input type="checkbox" value="css-newsletter" name="news" class="selector" id="css-news">
+                <label for="css-news">CSS News</label>
                 </div>
                 <div class="block">
-                <input type="checkbox" value="javascript" name="news" class="selector">
-                <label>Javascript News</label>
+                <input type="checkbox" value="javascript-newsletter" name="subscribe" class="selector" id="javascript-news">
+                <label for="javascript-news">Javascript News</label>
                 </div>            
                 <label class="subheader">Newsletter format</label>
                 <div class="block">
-                <input type="radio" value="html" name="format" class="selector">
-                <label>HTML</label>
+                <input type="radio" value="html-format" name="choose" class="selector" id="html-format">
+                <label for="html-format">HTML</label>
                 </div>
                 <div class="block">
-                <input type="radio" value="plain-text" name="format" class="selector">
-                <label>Plain text</label>
+                <input type="radio" value="plain-text-format" name="choose" class="selector" id="plain-format">
+                <label for="plain-format">Plain text</label>
                 </div>
                 <label class="subheader topics">Other topics you'd like to hear about</label>
-                <input type="textarea" id="textarea" name="textarea" placeholder="your views here!">
+                <textarea id="textarea" name="textarea" placeholder="your views here!"></textarea>
                 <button type="submit" class="submit">Sign Up</button> 
             </fieldset>
             </div>
@@ -204,8 +203,5 @@
 <footer>
     <p>Copyright The Code Review</p>
 </footer>
-
-</body>
-    
-    
+</body> 
 </html>
